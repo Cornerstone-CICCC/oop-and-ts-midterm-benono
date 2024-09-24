@@ -14,10 +14,14 @@ export class CartContext {
   }
 
   getTotalPrice() {
-    return this.cartItems.reduce(
+    const totalPrice = this.cartItems.reduce(
       (total, item) => total + item.product.price * item.quantity,
       0
     );
+    return parseFloat(totalPrice.toFixed(2)).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
   }
 
   getCartSummary() {
