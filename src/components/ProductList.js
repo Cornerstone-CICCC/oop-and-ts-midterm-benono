@@ -19,7 +19,8 @@ export class ProductList extends Component {
 
   render() {
     const productList = document.createElement("div");
-    productList.className = "flex flex-wrap justify-center mx-auto w-full";
+    productList.className =
+      "flex flex-wrap gap-2 justify-center mx-auto w-full";
     productList.innerHTML = "";
 
     this.state.products.forEach((product) => {

@@ -8,9 +8,9 @@ export class App extends Component {
     container.className = "mx-auto";
     container.innerHTML = `
     <h1>products</h1>
-    <div class='content-wrapper flex gap-4 px-10 justify-center'>
-      <div class='product-list w-[70%]'></div>
-      <div class='cart w-[30%]'></div>
+    <div class='content-wrapper flex flex-col lg:flex-row gap-4 px-10 justify-center'>
+      <div class='cart w-full lg:w-[40%] lg:max-w-[450px]  lg:order-2'></div>
+      <div class='product-list w-full lg:w-[60%]  lg:order-1'></div>
     </div>
     `;
 
