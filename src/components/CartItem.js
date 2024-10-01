@@ -35,7 +35,7 @@ export class CartItem extends Component {
             <span class="cart-item-quantity px-4">${this.props.quantity}</span>
             <button class="quantity-increase px-2 py-1 bg-gray-200 rounded-r">+</button>
           </div>
-          <button class="cart-item-remove">Remove</button>
+          <button class="bg-transparent hover:text-[#2C2319] cursor-pointer text-[#ABBAA9] cart-item-remove">Remove</button>
         </div>
         
       </div>
